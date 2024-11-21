@@ -1,0 +1,55 @@
+---
+output: 
+  bookdown::gitbook:
+    output_file: "DataLab_ALC.html"
+    css: "Auxiliares/preferencias.css"
+    split_by: "chapter"
+    number_sections: false
+---
+
+```{r setup, include=FALSE}
+rm(list = ls(all.names = TRUE))
+gc()
+knitr::opts_chunk$set(
+	error = F,
+	fig.align = "center",
+	fig.dim = c(10, 6.5),
+	message = FALSE,
+	warning = FALSE,
+	echo = TRUE
+)
+
+
+#Cargamos nuestras librerías
+library(tidyverse)
+library(forecast)
+library(GGally)
+#Estilo global de gráficos
+theme_set(theme_minimal())
+
+#Paleta de colores en hexadecimal:
+PALETA <- c("#007bff","#ff7f0e","#2ca02c","#d62728","#9467bd","#0012b5ff","#ca5e00ff","#1b5f1bff","#901b1bff","#583379ff")
+```
+
+# index
+<h2 style="font-size: 3em; text-align: center;">Ciencia de Datos<br>Ejercicios prácticos</h1>
+<h2 style="font-size: 2em; text-align: center;">Autor: Andrés Limón Cruz</h2>
+<h2 style="font-size: 1.5em; text-align: center;">Fecha: `r Sys.Date()`</h2>
+
+# Resultados de elecciones en Baja California
+```{r, child = "Ejercicios/Ejercicio1.rmd"}
+
+```
+
+
+# Segmentación de clientes
+```{r, child = "Ejercicios/Ejercicio2.rmd"}
+
+```
+
+
+# Homicidos en ""
+```{r, child = "Ejercicios/Ejercicio3.rmd"}
+
+```
+
