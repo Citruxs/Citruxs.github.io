@@ -24,6 +24,9 @@ knitr::opts_chunk$set(
 library(tidyverse)
 library(forecast)
 library(GGally)
+library(psych)
+library(factoextra)
+library(NbClust)
 #Estilo global de gráficos
 theme_set(theme_minimal())
 

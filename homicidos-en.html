@@ -158,10 +158,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="homicidos-en" class="section level1 hasAnchor">
 <h1>Homicidos en “”<a href="homicidos-en.html#homicidos-en" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="homicidos-en.html#cb5-1" tabindex="-1"></a>ts <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;ejercicio_3.csv&quot;</span>)</span>
-<span id="cb5-2"><a href="homicidos-en.html#cb5-2" tabindex="-1"></a>ts<span class="sc">$</span>Clave_Ent <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(ts<span class="sc">$</span>Clave_Ent)</span></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="homicidos-en.html#cb6-1" tabindex="-1"></a>ts_21 <span class="ot">&lt;-</span> ts <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Clave_Ent <span class="sc">==</span> <span class="dv">21</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="homicidos-en.html#cb7-1" tabindex="-1"></a>ts_21</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="homicidos-en.html#cb21-1" tabindex="-1"></a>ts <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;ejercicio_3.csv&quot;</span>)</span>
+<span id="cb21-2"><a href="homicidos-en.html#cb21-2" tabindex="-1"></a>ts<span class="sc">$</span>Clave_Ent <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(ts<span class="sc">$</span>Clave_Ent)</span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="homicidos-en.html#cb22-1" tabindex="-1"></a>ts_21 <span class="ot">&lt;-</span> ts <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Clave_Ent <span class="sc">==</span> <span class="dv">21</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="homicidos-en.html#cb23-1" tabindex="-1"></a>ts_21</span></code></pre></div>
 <pre><code>## # A tibble: 93 × 3
 ##    fecha    `Homicidio_Homicidio-doloso` Clave_Ent
 ##    &lt;chr&gt;                           &lt;dbl&gt; &lt;fct&gt;    
@@ -176,14 +176,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  9 30/09/17                           86 21       
 ## 10 31/10/17                           84 21       
 ## # ℹ 83 more rows</code></pre>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="homicidos-en.html#cb9-1" tabindex="-1"></a>ts_21 <span class="ot">&lt;-</span> <span class="fu">ts</span>(ts_21<span class="sc">$</span><span class="st">`</span><span class="at">Homicidio_Homicidio-doloso</span><span class="st">`</span>, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">2017</span>,<span class="dv">1</span>), <span class="at">frequency =</span> <span class="dv">24</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="homicidos-en.html#cb10-1" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_21)</span></code></pre></div>
-<p><img src="DataLab_files/figure-html/unnamed-chunk-21-1.png" width="960" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="homicidos-en.html#cb11-1" tabindex="-1"></a>modelo <span class="ot">&lt;-</span> <span class="fu">auto.arima</span>(ts_21)</span>
-<span id="cb11-2"><a href="homicidos-en.html#cb11-2" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">forecast</span>(modelo, <span class="at">h =</span> <span class="dv">36</span>))</span></code></pre></div>
-<p><img src="DataLab_files/figure-html/unnamed-chunk-22-1.png" width="960" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="homicidos-en.html#cb12-1" tabindex="-1"></a>modelo <span class="ot">&lt;-</span> <span class="fu">auto.arima</span>(ts_21)</span>
-<span id="cb12-2"><a href="homicidos-en.html#cb12-2" tabindex="-1"></a>modelo</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="homicidos-en.html#cb25-1" tabindex="-1"></a>ts_21 <span class="ot">&lt;-</span> <span class="fu">ts</span>(ts_21<span class="sc">$</span><span class="st">`</span><span class="at">Homicidio_Homicidio-doloso</span><span class="st">`</span>, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">2017</span>,<span class="dv">1</span>), <span class="at">frequency =</span> <span class="dv">24</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="homicidos-en.html#cb26-1" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_21)</span></code></pre></div>
+<p><img src="DataLab_files/figure-html/unnamed-chunk-41-1.png" width="960" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="homicidos-en.html#cb27-1" tabindex="-1"></a>modelo <span class="ot">&lt;-</span> <span class="fu">auto.arima</span>(ts_21)</span>
+<span id="cb27-2"><a href="homicidos-en.html#cb27-2" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">forecast</span>(modelo, <span class="at">h =</span> <span class="dv">36</span>))</span></code></pre></div>
+<p><img src="DataLab_files/figure-html/unnamed-chunk-42-1.png" width="960" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="homicidos-en.html#cb28-1" tabindex="-1"></a>modelo <span class="ot">&lt;-</span> <span class="fu">auto.arima</span>(ts_21)</span>
+<span id="cb28-2"><a href="homicidos-en.html#cb28-2" tabindex="-1"></a>modelo</span></code></pre></div>
 <pre><code>## Series: ts_21 
 ## ARIMA(2,1,1)(1,0,0)[24] 
 ## 
@@ -194,8 +194,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## sigma^2 = 134.4:  log likelihood = -354.61
 ## AIC=719.21   AICc=719.91   BIC=731.82</code></pre>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="homicidos-en.html#cb14-1" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">forecast</span>(<span class="fu">HoltWinters</span>(ts_21),<span class="dv">24</span>))</span></code></pre></div>
-<p><img src="DataLab_files/figure-html/unnamed-chunk-24-1.png" width="960" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="homicidos-en.html#cb30-1" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">forecast</span>(<span class="fu">HoltWinters</span>(ts_21),<span class="dv">24</span>))</span></code></pre></div>
+<p><img src="DataLab_files/figure-html/unnamed-chunk-44-1.png" width="960" style="display: block; margin: auto;" /></p>
 <div style="page-break-after: always;"></div>
 </div>
             </section>
