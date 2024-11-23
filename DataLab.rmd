@@ -27,6 +27,10 @@ library(GGally)
 library(psych)
 library(factoextra)
 library(NbClust)
+library(seastests)
+library(lmtest)
+library(tseries)
+library(nortsTest)
 #Estilo global de gráficos
 theme_set(theme_minimal())
 
@@ -51,7 +55,7 @@ PALETA <- c("#007bff","#ff7f0e","#2ca02c","#d62728","#9467bd","#0012b5ff","#ca5e
 ```
 
 
-# Homicidos en ""
+# Homicidos en Guerrero
 ```{r, child = "Ejercicios/Ejercicio3.rmd"}
 
 ```
