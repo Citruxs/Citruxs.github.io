@@ -7,25 +7,32 @@ redirect_from:
   - /about.html
 ---
 
-## Científico de Datos | Entusiasta del Open Source | CDMX
+## 📊 Científico de Datos | Entusiasta del Open Source & Reproducibilidad
 
-Soy un científico de datos con sede en la Ciudad de México, enfocado en la intersección de la estadística aplicada, el desarrollo de modelos de aprendizaje automático y la interpretabilidad de algoritmos complejos. Mi filosofía de trabajo está profundamente ligada al movimiento de software libre y la transparencia algorítmica.
+Soy Científico de Datos con base en la Ciudad de México. Mi trabajo se centra en la intersección de la **estadística aplicada**, el **diseño de muestreo** y la **inferencia causal**. Creo firmemente en el movimiento del software libre, la transparencia algorítmica y la reproducibilidad científica; por ello, busco que cada línea de código y metodología sea abierta, auditable y con rigor matemático.
 
-## Perfil Profesional
-Cuento con experiencia técnica en el ciclo completo de vida de los datos, desde la manipulación y visualización avanzada hasta la implementación de modelos predictivos de alta precisión. Me especializo en hacer que los modelos de "caja negra" sean comprensibles y accionables para la toma de decisiones.
+## 🛠️ Stack Técnico & Entorno
 
-## Aptitudes y Habilidades Técnicas
+### 🔬 Ciencia de Datos & Estadística Generalizada
+* **Lenguajes:** R (Avanzado), Python, SQL.
+* **Estadística y Muestreo:** Estimación en Áreas Pequeñas (SAE), Marcos de Inferencia Causal (Rubin's Counterfactual Framework), Modelado Estadístico Complejo y Diseños de Muestreo (uso robusto de librerías como `survey`, `sampling` y `sf` para análisis espacial).
+* **Machine Learning & XAI:** Modelado predictivo (XGBoost), optimización de hiperparámetros e interpretabilidad de modelos post-hoc (SHAP, LIME).
+* **Visualización de Datos:** Manipulación y gráficos avanzados en R/Python, y desarrollo de visualizaciones dinámicas con **D3.js**.
 
-### 🤖 Ciencia de Datos y ML
-* **Modelado Predictivo:** Experto en implementación y optimización de **XGBoost**, utilizando técnicas de validación robustas como *repeated holdout*.
-* **Interpretabilidad (XAI):** Aplicación de técnicas post-hoc como **SHAP** y **LIME** para la explicación de modelos.
-* **Optimización:** Ajuste fino de hiperparámetros mediante *GridSearchCV* y *RandomizedSearchCV*.
-* **Evaluación:** Dominio de métricas de desempeño (MSE, $R^2$) y diagnósticos estadísticos.
+### 💻 Entorno de Desarrollo & Filosofía Open Source
+* **OS:** Usuario avanzado de distribuciones Linux (**Fedora KDE Plasma** / Arch / Manjaro) y defensor del ecosistema GNU.
+* **Toolchain:** Desarrollo eficiente en terminal usando **Neovim** y **Zsh**.
+* **Git & Seguridad:** Flujos de trabajo reproducibles, control de versiones estricto y commits firmados mediante **GPG**.
+* **Ciencia Abierta:** Publicación y preservación de datasets y código con identificadores digitales persistentes (**Zenodo / DOIs**).
 
-### 💻 Desarrollo y Visualización
-* **Stack Técnico:** Python, Node.js y manejo de bases de datos SQL (MySQL).
-* **Visualización de Datos:** Creación de gráficos interactivos y manipulación de SVGs utilizando la biblioteca **D3.js**.
-* **Entornos:** Usuario avanzado de distribuciones Linux (**Fedora**, Manjaro) y defensor del proyecto **GNU**.
 
-## Educación y Formación
-* **Matemáticas Aplicadas y Ciencia de Datos** Licenciatura por la Universidad Nacional Autónoma de México (UNAM), con formación complementaria en estadística y programación.
+## 🎓 Educación
+* **Licenciatura en Ciencias de la Computación / Matemáticas Aplicadas y Ciencia de Datos**  
+  *Facultad de Ciencias, Universidad Nacional Autónoma de México (UNAM)*.  
+  *Enfoque en simulación estocástica, evaluación de métodos de estimación y reconstrucción de marcos muestrales.*
+
+## 📈 Estadísticas de GitHub
+
+<p align="center">
+  <img src="https://gh-readme-profile.vercel.app/api?username=Citruxs&theme=transparent" alt="GitHub Stats - Dark" />
+</p>
