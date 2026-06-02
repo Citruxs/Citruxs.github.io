@@ -8,7 +8,7 @@ date: 2025-08-01
 location: "Ciudad de México, México"
 ---
 
-Durante el ciclo 2026-2 participé como ayudante en
+Durante el ciclo 2026-1 participé como ayudante en
 **Seminario de Estadística I: Aprendizaje Estadístico Automatizado**
 de la Licenciatura en Actuaría, en la Facultad de Ciencias de la UNAM
 (grupo 9294).
