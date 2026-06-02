@@ -18,6 +18,7 @@ Soy Científico de Datos con base en la Ciudad de México. Mi trabajo se centra 
 * **Estadística y Muestreo:** Estimación en Áreas Pequeñas (SAE), Marcos de Inferencia Causal (Rubin's Counterfactual Framework), Modelado Estadístico Complejo y Diseños de Muestreo (uso robusto de librerías como `survey`, `sampling` y `sf` para análisis espacial).
 * **Machine Learning & XAI:** Modelado predictivo (XGBoost), optimización de hiperparámetros e interpretabilidad de modelos post-hoc (SHAP, LIME).
 * **Visualización de Datos:** Manipulación y gráficos avanzados en R/Python, y desarrollo de visualizaciones dinámicas con **D3.js**.
+* **Series de Tiempo:** Modelado de series temporales con `forecast` y `prophet`
 
 ### 💻 Entorno de Desarrollo & Filosofía Open Source
 * **OS:** Usuario avanzado de distribuciones Linux (**Fedora KDE Plasma** / Arch / Manjaro) y defensor del ecosistema GNU.
